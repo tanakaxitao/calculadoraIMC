@@ -1,0 +1,18 @@
+.headercont {
+  text-align: center;
+  background-color: green;
+}
+
+img {
+  width: 80px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+p {
+  color: #fff;
+  font-size: 1.3rem;
+}
