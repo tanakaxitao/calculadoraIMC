@@ -6,7 +6,6 @@ const Form = () => {
   const [height, setHeight] = useState("");
   const [result, setResult] = useState("");
   const [name, setName] = useState("");
-
   function handleSubmit(e) {
     e.preventDefault();
     const cal = parseFloat(weight) / (parseFloat(height) * parseFloat(height));
@@ -62,7 +61,7 @@ const Form = () => {
               result < 18.5 && result > 1 ? "active" : ""
             }`}
           >
-            <span>Baixo Peso</span>
+            <span>Abaixo Do Peso</span>
           </div>
           <div
             className={`caixas normal ${
@@ -76,7 +75,7 @@ const Form = () => {
               result >= 25 && result <= 29.9 ? "active" : ""
             }`}
           >
-            <span>Sobrepreso</span>
+            <span>Acima Do Peso</span>
           </div>
           <div
             className={`caixas pre ${
@@ -90,10 +89,10 @@ const Form = () => {
               result >= 35 && result <= 39.9 ? "active" : ""
             }`}
           >
-            <span>Obeso I</span>
+            <span>Obeso</span>
           </div>
           <div className={`caixas ob2 ${result > 40 ? "active" : ""}`}>
-            <span>Obeso II</span>
+            <span>Obesidade Grave</span>
           </div>
         </div>
       </div>
